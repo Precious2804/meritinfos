@@ -87,10 +87,10 @@
                         <h5 class="category-title mb-0">Web Development</h5>
                     </div>
                     <ul class="category-list">
-                        <li><a href="#">E-commerce strategy</a></li>
-                        <li><a href="#">Custom design</a></li>
                         <li><a href="#">Front-End development</a></li>
-                        <li><a href="#">Business intelligence</a></li>
+                        <li><a href="#">Back-End development</a></li>
+                        <li><a href="#">Financial Technology</a></li>
+                        <li><a href="#">Blockchain Technology</a></li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                         <li><a href="#">Logo design</a></li>
                         <li><a href="#">UI/UX design</a></li>
                         <li><a href="#">Visual design</a></li>
-                        <li><a href="#">Brand collateral</a></li>
+                        <li><a href="#">Video Animation</a></li>
                     </ul>
                 </div>
             </div>
@@ -232,7 +232,7 @@
                 <div class="d-md-flex align-items-center">
                     <div class="me-4">
                         <p class="mb-0">Established in</p>
-                        <h3 class="display-2 fw-bold text-primary mb-0">2010</h3>
+                        <h3 class="display-2 fw-bold text-primary mb-0">2018</h3>
                     </div>
                     <div class="me-3">
                         <h2 class="mb-0">We enable constant enterprise transformation at speed and scale.</h2>
@@ -245,7 +245,6 @@
                 <div class="d-flex h-100">
                     <div class="nav flex-column nav-pills w-100 align-self-lg-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link" id="mission-and-vision-tab" data-bs-toggle="pill" href="#mission-and-vision" role="tab" aria-controls="mission-and-vision" aria-selected="true"><span class="data-hover" data-title="Mission and vision">Mission and vision</span></a>
-                        <a class="nav-link active" id="our-challenges-tab" data-bs-toggle="pill" href="#our-challenges" role="tab" aria-controls="our-challenges" aria-selected="false"><span class="data-hover" data-title="Our challenges">Our challenges</span></a>
                         <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#technology-partners" role="tab" aria-controls="technology-partners" aria-selected="false"><span class="data-hover" data-title="Technology partners">Technology partners</span></a>
                         <a class="nav-link" id="meet-the-our-team-tab" data-bs-toggle="pill" href="#meet-the-our-team" role="tab" aria-controls="meet-the-our-team" aria-selected="false"><span class="data-hover" data-title="Meet the our team">Meet the our team</span></a>
                         <a class="nav-link" id="careers-with-us-tab" data-bs-toggle="pill" href="#careers-with-us" role="tab" aria-controls="careers-with-us" aria-selected="false"><span class="data-hover" data-title="Careers with us">Careers with us</span></a>
@@ -254,7 +253,7 @@
             </div>
             <div class="col-md-9 mt-3 mt-md-0">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade" id="mission-and-vision" role="tabpanel" aria-labelledby="mission-and-vision-tab">
+                    <div class="tab-pane show active" id="mission-and-vision" role="tabpanel" aria-labelledby="mission-and-vision-tab">
                         <div class="row">
                             <div class="col-sm-5 align-self-lg-center mb-4 mb-sm-0">
                                 <img class="img-fluid rounded" src="images/about/01.jpg" alt="">
@@ -265,22 +264,6 @@
                                 <h4><i class="flaticon-eye text-primary me-2"></i> Our Vision</h4>
                                 <p class="mb-4">Our Vision is to be a top Web Design company in the IT sector and progress in our current position in the market. </p>
                                 <h6 class="fw-normal text-muted mt-4">Our Vision and Mission are both encouraging our team to accomplish the goal. We recognize the clients' requirements, analyze them, and provide the best solutions. We satisfy our clients by our services and implements it with more capable software solution approaches.</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="our-challenges" role="tabpanel" aria-labelledby="our-challenges-tab">
-                        <div class="row">
-                            <div class="col-sm-5 align-self-lg-center mb-4 mb-sm-0">
-                                <img class="img-fluid rounded" src="images/about/04.jpg" alt="">
-                            </div>
-                            <div class="col-sm-7 align-self-start align-self-lg-center ps-md-0 ps-lg-5">
-                                <h4 class="mb-4 text-dark">“We take pride in helping our clients deliver marvelous results when it comes to their projects. From data to performance, we’ve got you covered.”</h4>
-                                <p class="d-flex align-items-center mb-4">
-                                    <span class="fw-bold text-dark me-2">Alice Williams</span> -
-                                    <label class="ms-2 mb-0">Sales and Marketing</label>
-                                </p>
-                                <p class="mb-4">We know this in our gut, but what can we do about it? How can we motivate ourselves? One of the most difficult aspects of achieving success is staying motivated over the long haul.</p>
-                                <a href="#" class="btn btn-primary-round btn-round">Learn More<i class="fas fa-arrow-right ps-3"></i></a>
                             </div>
                         </div>
                     </div>
@@ -441,7 +424,7 @@
                 <h2 class="text-white mb-2 mb-lg-0">We excel in our industry so that you can get in yours.</h2>
             </div>
             <div class="col-lg-6">
-                <p class="lead text-white mb-0">We offer expertise across various industries. See some of the industries we have vast experience working in as a full-service marketing agency.</p>
+                <p class="lead text-white mb-0">We offer expertise across various industries. See some of the industries we have vast experience working in as a full-service software providing agency.</p>
             </div>
         </div>
         <div class="row">
@@ -477,12 +460,6 @@
                 </ul>
             </div>
         </div>
-        <div class="row mt-4 mt-md-5">
-            <div class="col-12 d-md-flex justify-content-center align-items-center">
-                <p class="mb-3 mb-md-0 mx-0 mx-md-3 text-white">We provide solutions for all types of big industries</p>
-                <a href="#" class="btn btn-primary-round text-white btn-round mx-0 mx-md-3">Browse Industries<i class="fas fa-arrow-right ps-3"></i></a>
-            </div>
-        </div>
     </div>
 </section>
 <!--=================================
@@ -496,7 +473,7 @@
             <div class="col-lg-4">
                 <div class="section-title is-sticky">
                     <h2>This is what we do and we do it perfectly.</h2>
-                    <p class="mb-4">Please take a look at the range of <b>IT solution</b> services we offer to your brand as a full-service leading marketing agency.</p>
+                    <p class="mb-4">Please take a look at the range of <b>IT solution</b> services we offer to your brand as a full-service software providing agency.</p>
                     <a href="#" class="btn btn-primary-round btn-round">See All Services<i class="fas fa-arrow-right ps-3"></i></a>
                 </div>
             </div>
@@ -573,122 +550,6 @@
 </section>
 <!--=================================
     Service -->
-
-<!--=================================
-    Testimonial and Brands -->
-<section class="space-ptb">
-    <div class="container">
-        <div class="row mb-0 mb-lg-4">
-            <div class="col-lg-6 col-xl-7 text-center">
-                <div class="owl-carousel testimonial-style-02" data-nav-arrow="true" data-nav-dots="false" data-items="1" data-lg-items="1" data-md-items="1" data-sm-items="1" data-space="0" data-autoheight="true">
-                    <div class="item">
-                        <div class="video-image">
-                            <img class="img-fluid w-100" src="images/feature-info/01.jpg" alt="">
-                            <a class="popup-icon popup-youtube" href="https://www.youtube.com/watch?v=LgvseYYhqU0">
-                                <i class="fa fa-play"></i>
-                                <!-- svg start -->
-                                <div class="svg-item">
-                                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="48px" viewBox="0 0 1920 48" style="enable-background:new 0 0 1920 48;" xml:space="preserve">
-                                        <polygon id="XMLID_1_" class="st0" fill="#ffffff" points="1920,48 0,48 0,48 1920,0 " />
-                                    </svg>
-                                </div>
-                                <!-- svg end -->
-                            </a>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-avatar">
-                                <img class="img-fluid rounded-circle" src="images/avatar/01.jpg" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p>We don't take ourselves too seriously, but seriously enough to ensure we're creating the best product and experience for our customers. I feel like Help Scout does the same.</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <div class="testimonial-name">
-                                    <h6 class="mb-1">Michael Bean</h6>
-                                    <span>Web Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="video-image">
-                            <img class="img-fluid w-100" src="images/feature-info/02.jpg" alt="">
-                            <a class="popup-icon popup-youtube" href="https://www.youtube.com/watch?v=LgvseYYhqU0">
-                                <i class="fa fa-play"></i>
-                                <!-- svg start -->
-                                <div class="svg-item">
-                                    <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="48px" viewBox="0 0 1920 48" style="enable-background:new 0 0 1920 48;" xml:space="preserve">
-                                        <polygon id="XMLID_2_" class="st0" fill="#ffffff" points="1920,48 0,48 0,48 1920,0 " />
-                                    </svg>
-                                </div>
-                                <!-- svg end -->
-                            </a>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-avatar">
-                                <img class="img-fluid rounded-circle" src="images/avatar/02.jpg" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p>{{env('APP_NAME')}} is the next killer app. {{env('APP_NAME')}} did exactly what you said it does. I will let my mum know about this, she could really make use of {{env('APP_NAME')}}! Thank you for making it painless, pleasant and most of all hassle free!</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <div class="testimonial-name">
-                                    <h6 class="mb-1">Mariquilla V.</h6>
-                                    <span>Production Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="video-image">
-                            <img class="img-fluid w-100" src="images/feature-info/03.jpg" alt="">
-                            <a class="popup-icon popup-youtube" href="https://www.youtube.com/watch?v=LgvseYYhqU0">
-                                <i class="fa fa-play"></i>
-                                <!-- svg start -->
-                                <div class="svg-item">
-                                    <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="48px" viewBox="0 0 1920 48" style="enable-background:new 0 0 1920 48;" xml:space="preserve">
-                                        <polygon id="XMLID_3_" class="st0" fill="#ffffff" points="1920,48 0,48 0,48 1920,0 " />
-                                    </svg>
-                                </div>
-                                <!-- svg end -->
-                            </a>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-avatar">
-                                <img class="img-fluid rounded-circle" src="images/avatar/03.jpg" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p>We were treated like royalty. Needless to say we are extremely satisfied with the results. Thank you for making it painless, pleasant and most of all hassle free! It fits our needs perfectly.</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <div class="testimonial-name">
-                                    <h6 class="mb-1">Fern W.</h6>
-                                    <span>Marketing Expert</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-5 align-self-center ps-0 ps-lg-5 mt-5 mt-lg-0">
-                <div class="ps-3 ps-lg-4">
-                    <h2 class="mb-4 mb-lg-5">Over 500 clients and 5,000 projects across the globe.</h2>
-                    <a href="#" class="btn btn-primary-round btn-round mb-3">Client Success Stories<i class="fas fa-arrow-right ps-3"></i></a>
-                    <hr>
-                    <h5 class="text-primary mt-md-4 mt-lg-5 mb-3 pt-3">Awards and Nominees</h5>
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-3 col-6 mb-3 mb-md-0"><img class="img-fluid grayscale pt-4 w-75" src="images/award-logo/01.svg" alt=""></div>
-                        <div class="col-lg-6 col-sm-3 col-6 mb-3 mb-md-0"><img class="img-fluid grayscale pt-4 w-75" src="images/award-logo/05.svg" alt=""></div>
-                        <div class="col-lg-6 col-sm-3 col-6 "><img class="img-fluid grayscale pt-4 pt-lg-5 w-75" src="images/award-logo/03.svg" alt=""></div>
-                        <div class="col-lg-6 col-sm-3 col-6 "><img class="img-fluid grayscale pt-4 pt-lg-5 w-75" src="images/award-logo/04.svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=================================
-    Testimonial and Brands -->
 
 <!--=================================
     Counter -->

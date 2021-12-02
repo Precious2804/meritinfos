@@ -10,7 +10,7 @@
     <title> {{env('APP_NAME')}} </title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&amp;display=swap">
@@ -42,10 +42,10 @@
                     <div class="col-12">
                         <div class="d-block d-md-flex align-items-center text-center">
                             <div class="me-4 d-inline-block py-1">
-                                <a href="#"><i class="far fa-envelope me-2 fa-flip-horizontal text-primary"></i>letstalk@hisoft.com</a>
+                                <a href="mailto: {{env('EMAIL')}} "><i class="far fa-envelope me-2 fa-flip-horizontal text-primary"></i> {{env('EMAIL')}} </a>
                             </div>
                             <div class="me-auto d-inline-block py-1">
-                                <a href="tel:1-800-555-1234"><i class="fas fa-map-marker-alt text-primary me-2"></i>6580 Allison Turnpike Creminfort, AL 32808</a>
+                                <a href="tel:{{env('PHONE')}}"><i class="fas fa-map-marker-alt text-primary me-2"></i> {{env('LOCATION')}} </a>
                             </div>
                             <div class="d-inline-block py-1">
                                 <ul class="list-unstyled">
@@ -100,7 +100,7 @@
                 <div class="d-none d-sm-flex ms-auto me-5 me-lg-0 pe-4 pe-lg-0">
                     <ul class="nav ms-1 ms-lg-2 align-self-center">
                         <li class="contact-number nav-item pe-4 ">
-                            <a class="fw-bold" href="#"><i class="fab fa-whatsapp pe-2"></i>+(704) 279-1249</a>
+                            <a class="fw-bold" href="#"><i class="fab fa-whatsapp pe-2"></i>+{{env('PHONE')}}</a>
                         </li>
                         <li class="header-search nav-item">
                             <div class="search">
@@ -213,15 +213,15 @@
                         <div class="contact-address">
                             <div class="contact-item">
                                 <label>Address:</label>
-                                <p>6580 Allison Turnpike Creminfort, AL 32808</p>
+                                <p>{{env('LOCATION')}}</p>
                             </div>
                             <div class="contact-item">
                                 <label>Phone:</label>
-                                <h4 class="mb-0 fw-bold"><a href="#">+(704) 279-1249</a></h4>
+                                <h4 class="mb-0 fw-bold"><a href="tel:{{env('PHONE')}}">+{{env('PHONE')}}</a></h4>
                             </div>
                             <div class="contact-item">
                                 <label>Email:</label>
-                                <a class="text-dark" href="#">letstalk@hisoft.com</a>
+                                <a class="text-dark" href="mailto: {{env('EMAIL')}}">{{env('EMAIL')}}</a>
                             </div>
                         </div>
                     </div>
