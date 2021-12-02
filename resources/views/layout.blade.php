@@ -67,23 +67,23 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{route('/')}}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <a class="nav-link" href="{{route('/')}}" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                         </li>
                         <li class="dropdown nav-item">
                             <a href="/#" class="nav-link" data-bs-toggle="dropdown">About</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('about')}}">About Us<i class="fas fa-arrow-right"></i></a></li>
-                                <li><a class="dropdown-item" href="pricing.html">Team<i class="fas fa-arrow-right"></i></a></li>
-                                <li><a class="dropdown-item" href="testimonials.html">Carear</a></li>
+                                <li><a class="dropdown-item" href="{{route('team')}}">Team<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="">Carear</a></li>
                             </ul>
                         </li>
                         <li class="dropdown nav-item">
-                            <a href="properties.html" class="nav-link" data-bs-toggle="dropdown">IT Solutions</a>
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">IT Solutions</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about-us.html">Web Development<i class="fas fa-arrow-right"></i></a></li>
-                                <li><a class="dropdown-item" href="careers.html">Mobile Development<i class="fas fa-arrow-right"></i></a></li>
-                                <li><a class="dropdown-item" href="how-we-work.html">Branding Services<i class="fas fa-arrow-right"></i></a></li>
-                                <li><a class="dropdown-item" href="our-team.html">Digital Marketing<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="{{route('services')}}">Web Development<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="{{route('services')}}">Mobile Development<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="{{route('services')}}">Branding Services<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="{{route('services')}}">Digital Marketing<i class="fas fa-arrow-right"></i></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -184,7 +184,7 @@
                     <div class="footer-link">
                         <ul class="list-unstyled mb-0">
                             <li><a href="{{route('about')}}">About</a></li>
-                            <li><a href="#">Leadership Team</a></li>
+                            <li><a href="{{route('team')}}">Team</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Locations</a></li>
                             <li><a href="#">Careers</a></li>

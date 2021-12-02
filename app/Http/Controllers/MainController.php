@@ -8,7 +8,18 @@ class MainController extends Controller
 {
     //
 
-    public function about(){
+    public function about()
+    {
         return view('/about');
+    }
+
+    public function team()
+    {
+        return view('/team');
+    }
+
+    public function services()
+    {
+        return view('/services');
     }
 }

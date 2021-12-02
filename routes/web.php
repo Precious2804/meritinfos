@@ -19,3 +19,5 @@ Route::get('/', function () {
 })->name('/');
 
 Route::get('/about', [MainController::class, 'about'])->name('about');
+Route::get('/team', [MainController::class, 'team'])->name('team');
+Route::get('/services', [MainController::class, 'services'])->name('services');

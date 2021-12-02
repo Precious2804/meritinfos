@@ -16,22 +16,6 @@
             </div>
         </div>
     </div>
-    <div class="header-inner-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link active" href="about-us.html">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="how-we-work.html">How we work</a></li>
-                        <li class="nav-item"><a class="nav-link" href="our-team.html">Our team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="mission-vision.html">Mission and vision</a></li>
-                        <li class="nav-item"><a class="nav-link" href="our-value.html">Our values</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 <br>
 <br>
@@ -63,6 +47,7 @@
                         <a class="nav-link" id="what-we-do-tab" data-bs-toggle="pill" href="#what-we-do" role="tab" aria-controls="what-we-do" aria-selected="true"><span class="data-hover" data-title="Who we are">What we do</span></a>
                         <a class="nav-link" id="mission-and-vision-tab" data-bs-toggle="pill" href="#mission-and-vision" role="tab" aria-controls="mission-and-vision" aria-selected="true"><span class="data-hover" data-title="Mission and vision">Mission and vision</span></a>
                         <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#technology-partners" role="tab" aria-controls="technology-partners" aria-selected="false"><span class="data-hover" data-title="Technology partners">Technology partners</span></a>
+                        <a class="nav-link" id="help-tab" data-bs-toggle="pill" href="#help" role="tab" aria-controls="technology-partners" aria-selected="false"><span class="data-hover" data-title="How we can help you">How we can help you</span></a>
                     </div>
                 </div>
             </div>
@@ -134,103 +119,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="meet-the-our-team" role="tabpanel" aria-labelledby="meet-the-our-team-tab">
-                        <div class="row">
-                            <div class="col-sm-5 align-self-lg-center mb-4 mb-sm-0">
-                                <img class="img-fluid rounded" src="images/about/02.jpg" alt="">
-                            </div>
-                            <div class="col-sm-7 align-self-start align-self-lg-center ps-md-0 ps-lg-5">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <h4 class="text-dark">Meet Our Leaders</h4>
-                                        <p>Meet our leaders and the hard-working personalities who deliver innovative concepts to corporations like yours.</p>
-                                    </div>
-                                    <div class="col-xl-4 col-md-4 col-sm-6 col-6">
-                                        <div class="team">
-                                            <div class="team-bg"></div>
-                                            <div class="team-img">
-                                                <img class="img-fluid" src="images/team/01.jpg" alt="">
-                                            </div>
-                                            <div class="team-info">
-                                                <a href="#" class="team-name">Avalon Carey</a>
-                                                <p>Chief People Officer</p>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-4 col-sm-6 col-6">
-                                        <div class="team">
-                                            <div class="team-bg"></div>
-                                            <div class="team-img">
-                                                <img class="img-fluid" src="images/team/02.jpg" alt="">
-                                            </div>
-                                            <div class="team-info">
-                                                <a href="#" class="team-name">Homer Reyes</a>
-                                                <p>Vice President</p>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-4 col-sm-6 col-6">
-                                        <div class="team">
-                                            <div class="team-bg"></div>
-                                            <div class="team-img">
-                                                <img class="img-fluid" src="images/team/03.jpg" alt="">
-                                            </div>
-                                            <div class="team-info">
-                                                <a href="#" class="team-name">Alice Williams</a>
-                                                <p>Team Leader</p>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mt-4">
-                                        <a class="btn btn-primary-round btn-round" href="#">View Our Team</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="careers-with-us" role="tabpanel" aria-labelledby="careers-with-us-tab">
+
+                    <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">
                         <div class="row">
                             <div class="col-sm-5 align-self-lg-center mb-4 mb-sm-0">
                                 <img class="img-fluid rounded" src="images/about/07.jpg" alt="">
                             </div>
                             <div class="col-sm-7 align-self-start align-self-lg-center ps-md-0 ps-lg-5">
-                                <h4 class="mb-2">Are you the best?</h4>
-                                <p class="mb-4">There’s always room for intelligent people who are excited about the digital world and are continually looking forward to seeing what’s next.</p>
-                                <h5>Why work with us?</h5>
-                                <div class="row mb-4">
-                                    <div class="col-md-6">
-                                        <ul class="list list-unstyled">
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Flexible Time Off </span></li>
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>24/7 parking. </span></li>
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Full medical benefits </span></li>
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Pto / vacation</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="list list-unstyled">
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Flexible hours</span></li>
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Collaborative environment</span></li>
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Health, Dental, And Vision</span></li>
-                                            <li class="d-flex"><i class="fas fa-check pe-2 pt-1 text-primary"></i><span>Collaborative environment</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary-round btn-round mt-2">View Available Positions<i class="fas fa-arrow-right ps-3"></i></a>
+                                <h4 class="mb-2">Let us Brand you and give you the Best business service</h4>
+                                <p class="mb-4">Through the collaboration with customers in discussing needs and demand, we're able to attain mutual understanding, gain customer trust to offer appropriate advice, and bring about suggestions on suitable technology to transform your business.</p>
                             </div>
                         </div>
                     </div>
