@@ -61,18 +61,18 @@
         <nav class="navbar bg-white navbar-static-top navbar-expand-lg">
             <div class="container-fluid">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"><i class="fas fa-align-left"></i></button>
-                <a class="navbar-brand" href="index.html" style="padding: 0; height:130px">
+                <a class="navbar-brand" href="{{route('/')}}" style="padding: 0; height:130px">
                     <img class="img-fluid" src="{{asset('images/meritinfos.png')}}" alt="logo" style="width: 100%; height:100%">
                 </a>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <a class="nav-link" href="{{route('/')}}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                         </li>
                         <li class="dropdown nav-item">
-                            <a href="properties.html" class="nav-link" data-bs-toggle="dropdown">About</a>
+                            <a href="/#" class="nav-link" data-bs-toggle="dropdown">About</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="contact.html">About Us<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="{{route('about')}}">About Us<i class="fas fa-arrow-right"></i></a></li>
                                 <li><a class="dropdown-item" href="pricing.html">Team<i class="fas fa-arrow-right"></i></a></li>
                                 <li><a class="dropdown-item" href="testimonials.html">Carear</a></li>
                             </ul>
@@ -145,7 +145,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-3">
-                        <img class="img-fluid" src="{{asset('images/meritinfos.png')}}" alt="logo" style="width: 100%; height:100%">
+                        <a href="{{route('/')}}">
+                            <img class="img-fluid" src="{{asset('images/meritinfos.png')}}" alt="logo" style="width: 100%; height:100%">
+                        </a>
                     </div>
                     <div class="col-sm-9 text-sm-end mt-4 mt-sm-0">
                         <ul class="list-unstyled mb-0 social-icon">
@@ -167,17 +169,13 @@
                     <h5 class="text-primary mb-2 mb-sm-4">IT Services</h5>
                     <div class="footer-link">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="#">Data Synchronization</a></li>
-                            <li><a href="#">Content Management</a></li>
-                            <li><a href="#">Content Delivery</a></li>
-                            <li><a href="#">Transaction Processing</a></li>
-                            <li><a href="#">Process Automation</a></li>
-                        </ul>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="#">Event Processing</a></li>
-                            <li><a href="#">Information Security</a></li>
-                            <li><a href="#">Mobile Platforms</a></li>
-                            <li><a href="#">Communications</a></li>
+                            <li><a href="#">Website Development</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Branding Services</a></li>
+                            <li><a href="#">Blockchain Technology</a></li>
+                            <li><a href="#">Financial Technology</a></li>
+                            <li><a href="#">Dev Ops</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
                         </ul>
                     </div>
                 </div>
@@ -185,16 +183,15 @@
                     <h5 class="text-primary mb-2 mb-sm-4">Company</h5>
                     <div class="footer-link">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="#">About</a></li>
+                            <li><a href="{{route('about')}}">About</a></li>
                             <li><a href="#">Leadership Team</a></li>
-                            <li><a href="#">IT Blog</a></li>
-                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Blog</a></li>
                             <li><a href="#">Locations</a></li>
-                            <li><a href="#">Careers <span class="badge bg-success ms-2">We're hiring</span></a></li>
+                            <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-2 mb-4 mb-sm-0">
+                <!-- <div class="col-sm-6 col-lg-2 mb-4 mb-sm-0">
                     <h5 class="text-primary mb-2 mb-sm-4">Support</h5>
                     <div class="footer-link">
                         <ul class="list-unstyled mb-0">
@@ -206,7 +203,7 @@
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-sm-6 col-lg-4">
                     <div class="footer-contact-info">
                         <h5 class="text-primary mb-3">Contact {{env('APP_NAME')}}</h5>
@@ -262,6 +259,11 @@
     <script src="js/counter/jquery.countTo.js"></script>
     <script src="js/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/counter/jquery.countTo.js"></script>
+    <script src="js/jarallax/jarallax.min.js"></script>
+    <script src="js/jarallax/jarallax-video.min.js"></script>
+    <script src="js/horizontal-timeline/horizontal-timeline.js"></script>
+    <script src="js/shuffle/shuffle.min.js"></script>
 
     <!-- Template Scripts (Do not remove)-->
     <script src="js/custom.js"></script>

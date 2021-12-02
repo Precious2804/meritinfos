@@ -235,7 +235,7 @@
                         <h3 class="display-2 fw-bold text-primary mb-0">2018</h3>
                     </div>
                     <div class="me-3">
-                        <h2 class="mb-0">We enable constant enterprise transformation at speed and scale.</h2>
+                        <h2 class="mb-0">We enable constant enterprise transformation at great speed and scale.</h2>
                     </div>
                 </div>
             </div>
