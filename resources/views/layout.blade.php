@@ -84,6 +84,7 @@
                                 <li><a class="dropdown-item" href="{{route('services')}}">Mobile Development<i class="fas fa-arrow-right"></i></a></li>
                                 <li><a class="dropdown-item" href="{{route('services')}}">Branding Services<i class="fas fa-arrow-right"></i></a></li>
                                 <li><a class="dropdown-item" href="{{route('services')}}">Digital Marketing<i class="fas fa-arrow-right"></i></a></li>
+                                <li><a class="dropdown-item" href="{{route('services')}}">See all >><i class="fas fa-arrow-right"></i></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
