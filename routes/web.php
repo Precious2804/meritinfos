@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,10 @@ Route::get('/', function () {
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/team', [MainController::class, 'team'])->name('team');
 Route::get('/services', [MainController::class, 'services'])->name('services');
+Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
+Route::get('/syslogin', [AdminController::class, 'syslogin'])->name('syslogin');
+Route::post('/do_login', [AdminController::class, 'do_login'])->name('do_login');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('admin.dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+});

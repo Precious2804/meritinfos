@@ -74,7 +74,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('about')}}">About Us<i class="fas fa-arrow-right"></i></a></li>
                                 <li><a class="dropdown-item" href="{{route('team')}}">Team<i class="fas fa-arrow-right"></i></a></li>
-                                <li><a class="dropdown-item" href="">Carear</a></li>
+                                <li><a class="dropdown-item" href="#">Carear</a></li>
                             </ul>
                         </li>
                         <li class="dropdown nav-item">
@@ -88,13 +88,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="properties.html" class="nav-link" data-bs-toggle="dropdown">Portfolio</a>
+                            <a href="{{route('portfolio')}}" class="nav-link">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="properties.html" class="nav-link" data-bs-toggle="dropdown">Blog</a>
+                            <a href="" class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="properties.html" class="nav-link" data-bs-toggle="dropdown">Contact</a>
+                            <a href="" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -102,17 +102,6 @@
                     <ul class="nav ms-1 ms-lg-2 align-self-center">
                         <li class="contact-number nav-item pe-4 ">
                             <a class="fw-bold" href="#"><i class="fab fa-whatsapp pe-2"></i>+{{env('PHONE')}}</a>
-                        </li>
-                        <li class="header-search nav-item">
-                            <div class="search">
-                                <a class="search-btn not_click" href="javascript:void(0);"></a>
-                                <div class="search-box not-click">
-                                    <form action="https://themes.potenzaglobalsolutions.com/html/{{env('APP_NAME')}}/search.html" method="get">
-                                        <input type="text" class="not-click form-control" name="search" placeholder="Search..">
-                                        <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
-                                    </form>
-                                </div>
-                            </div>
                         </li>
                     </ul>
                 </div>
