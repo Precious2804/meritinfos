@@ -23,6 +23,8 @@ Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/team', [MainController::class, 'team'])->name('team');
 Route::get('/services', [MainController::class, 'services'])->name('services');
 Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
+Route::get('/contact', [MainController::class, 'contact'])->name('contact');
+Route::post('/do_contact', [MainController::class, 'do_contact'])->name('do_contact');
 Route::get('/syslogin', [AdminController::class, 'syslogin'])->name('syslogin');
 Route::post('/do_login', [AdminController::class, 'do_login'])->name('do_login');
 
