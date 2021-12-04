@@ -23,19 +23,21 @@
     <div class="container">
         <div class="row">
             <h5 style="text-align: center;">OUR PORTFOLIO</h5>
+            @foreach($all_portfolio as $item)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="feature-info feature-info-style-02 h-100">
                     <div class="feature-info-icon">
                         <i class="flaticon-data"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Meritinfos Official Website</h5>
+                        <h5 class="mb-0 ms-4 feature-info-title"> {{$item->project}} </h5>
                     </div>
                     <div class="feature-info-content">
-                        <p class="mb-0">Do it today. Remind yourself of someone you know who died suddenly and the fact that there is no guarantee that tomorrow will come.You carry on doing the same things, living the same way and dealing with this thing in the same way as you have been doing.</p>
-                        <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
+                        <p class="mb-0"> {{$item->description}} </p>
+                        <a href="{{$item->url}}" class="icon-btn" target="_blank"><i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
+                    <div class="feature-info-bg-img" style="background-image: url(<?php echo $item->image; ?>);"></div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </section>

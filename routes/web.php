@@ -30,5 +30,11 @@ Route::post('/do_login', [AdminController::class, 'do_login'])->name('do_login')
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('admin.dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    Route::get('admin.admin_services', [AdminController::class, 'admin_services'])->name('admin_services');
+    Route::get('admin.admin_portfolio', [AdminController::class, 'admin_portfolio'])->name('admin_portfolio');
+    Route::get('admin.admin_team', [AdminController::class, 'admin_team'])->name('admin_team');
     Route::get('logout', [AdminController::class, 'logout'])->name('logout');
+    Route::get('admin.edit_port', [AdminController::class, 'edit_port'])->name('edit_port');
+    Route::post('/upload_portfolio', [AdminController::class, 'upload_portfolio'])->name('upload_portfolio');
+    Route::post('/do_edit_port', [AdminController::class, 'do_edit_port'])->name('do_edit_port');
 });

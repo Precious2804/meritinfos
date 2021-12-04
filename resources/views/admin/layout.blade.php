@@ -70,10 +70,13 @@
                             <a class="nav-link" href="{{route('dashboard')}}" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Services</a>
+                            <a href="{{route('admin_services')}}" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Portfolio</a>
+                            <a href="{{route('admin_portfolio')}}" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('admin_team')}}" class="nav-link">Team</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('logout')}}" class="nav-link">Logout</a>

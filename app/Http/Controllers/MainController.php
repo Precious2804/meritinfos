@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
+use App\Models\Portfolio;
 use App\Models\User;
 use App\Notifications\ContactRequestNotification;
 use App\Traits\Generics;
@@ -30,7 +31,8 @@ class MainController extends Controller
 
     public function portfolio()
     {
-        return view('/portfolio');
+        $all_portfolio = ['all_portfolio'=>Portfolio::all()];
+        return view('/portfolio')->with($all_portfolio);
     }
 
     public function contact()
