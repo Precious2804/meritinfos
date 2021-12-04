@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
 use App\Models\Portfolio;
+use App\Models\Service;
 use App\Models\User;
 use App\Notifications\ContactRequestNotification;
 use App\Traits\Generics;
@@ -26,7 +27,8 @@ class MainController extends Controller
 
     public function services()
     {
-        return view('/services');
+        $all_service = ['all_service'=>Service::all()];
+        return view('/services')->with($all_service);
     }
 
     public function portfolio()

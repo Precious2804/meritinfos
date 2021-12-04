@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
+use App\Models\Service;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -43,7 +44,8 @@ class AdminController extends Controller
     }
     public function admin_services()
     {
-        return view('admin.admin_services');
+        $all_service = ['all_service' => Service::all()];
+        return view('admin.admin_services')->with($all_service);
     }
     public function admin_portfolio()
     {
@@ -65,6 +67,11 @@ class AdminController extends Controller
     {
         $port_details = ['port_details' => Portfolio::where('id', $req->id)->first()];
         return view('admin.edit_port')->with($port_details);
+    }
+    public function edit_service(Request $req)
+    {
+        $service_details = ['service_details' => Service::where('id', $req->id)->first()];
+        return view('admin.edit_service')->with($service_details);
     }
 
     public function upload_portfolio(Request $req)
@@ -117,5 +124,32 @@ class AdminController extends Controller
         } else {
             return $this->update($req, $data);
         }
+    }
+
+    public function upload_service(Request $req)
+    {
+        $req->validate([
+            'name' => 'required'
+        ]);
+        Service::create([
+            'name' => $req->name
+        ]);
+        return back()->with('uploaded', "The new service has been uploaded successfully");
+    }
+
+    public function do_edit_service(Request $req)
+    {
+        $data = Service::where('id', $req->id)->first();
+        $data->update([
+            'name' => $req->name
+        ]);
+        return back()->with('updated', "Service name Update was Successfull!");
+    }
+
+    public function delete_service(Request $req)
+    {
+        $data = Service::where('id', $req->id)->first();
+        $data->delete();
+        return back()->with('deleted', "Service has been deleted Successfully");
     }
 }

@@ -35,6 +35,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('admin.admin_team', [AdminController::class, 'admin_team'])->name('admin_team');
     Route::get('logout', [AdminController::class, 'logout'])->name('logout');
     Route::get('admin.edit_port', [AdminController::class, 'edit_port'])->name('edit_port');
+    Route::get('admin.edit_service', [AdminController::class, 'edit_service'])->name('edit_service');
     Route::post('/upload_portfolio', [AdminController::class, 'upload_portfolio'])->name('upload_portfolio');
+    Route::post('/upload_service', [AdminController::class, 'upload_service'])->name('upload_service');
     Route::post('/do_edit_port', [AdminController::class, 'do_edit_port'])->name('do_edit_port');
+    Route::post('/do_edit_service', [AdminController::class, 'do_edit_service'])->name('do_edit_service');
+    Route::get('/delete_service', [AdminController::class, 'delete_service'])->name('delete_service');
 });

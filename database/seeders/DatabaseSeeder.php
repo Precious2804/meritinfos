@@ -22,5 +22,27 @@ class DatabaseSeeder extends Seeder
             'password'=>Hash::make('admin'),
             'isAdmin'=>"1"
         ]);
+
+        $service1 = \App\Models\Service::create([
+            'name'=>"Website Development"
+        ]);
+        $service2 = \App\Models\Service::create([
+            'name'=>"Mobile Development"
+        ]);
+        $service3 = \App\Models\Service::create([
+            'name'=>"Branding Services"
+        ]);
+        $service4 = \App\Models\Service::create([
+            'name'=>"Digital Marketing"
+        ]);
+        $service5 = \App\Models\Service::create([
+            'name'=>"Content Management"
+        ]);
+        $service6 = \App\Models\Service::create([
+            'name'=>"Blockchain Technology"
+        ]);
+        $service7 = \App\Models\Service::create([
+            'name'=>"Financial Technology"
+        ]);
     }
 }

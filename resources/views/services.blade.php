@@ -22,11 +22,12 @@
 <section class="space-ptb">
     <div class="container">
         <div class="row">
+            @foreach($all_service as $item)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="feature-info feature-info-style-02 h-100">
                     <div class="feature-info-icon">
                         <i class="flaticon-data"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Website Development</h5>
+                        <h5 class="mb-0 ms-4 feature-info-title"> {{$item->name}} </h5>
                     </div>
                     <div class="feature-info-content">
                         <p class="mb-0"></p>
@@ -35,97 +36,7 @@
                     <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-author"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Mobile Development</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0">.</p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-icon-149196"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Branding Services</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0"></p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-icon-149196"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Digital Marketing</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0"></p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-group"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Content Management</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0"></p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-chart"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Blockchain Technology</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0"></p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-chart"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Financial Technology</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0"></p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature-info feature-info-style-02 h-100">
-                    <div class="feature-info-icon">
-                        <i class="flaticon-data"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">IT Consultancy</h5>
-                    </div>
-                    <div class="feature-info-content">
-                        <p class="mb-0"></p>
-                        <!-- <a href="#" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a> -->
-                    </div>
-                    <div class="feature-info-bg-img" style="background-image: url('images/meritinfos.png');"></div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
