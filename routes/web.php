@@ -30,4 +30,5 @@ Route::post('/do_login', [AdminController::class, 'do_login'])->name('do_login')
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('admin.dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    Route::get('logout', [AdminController::class, 'logout'])->name('logout');
 });
