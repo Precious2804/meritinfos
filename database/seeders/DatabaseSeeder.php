@@ -44,5 +44,12 @@ class DatabaseSeeder extends Seeder
         $service7 = \App\Models\Service::create([
             'name'=>"Financial Technology"
         ]);
+
+        $setting = \App\Models\GeneralSetting::create([
+            'name'=>"Admin",
+            'clients'=>0,
+            'posts'=>0,
+            'finished'=>0
+        ]);
     }
 }

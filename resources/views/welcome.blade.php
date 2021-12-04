@@ -582,7 +582,7 @@
                         <i class="flaticon-emoji"></i>
                     </div>
                     <div class="counter-content">
-                        <span class="timer" data-to="1790" data-speed="10000">1790</span>
+                        <span class="timer" data-to="{{$stats['clients']}}" data-speed="10000">{{$stats['clients']}}</span>
                         <label>Happy Clients</label>
                     </div>
                 </div>
@@ -593,7 +593,7 @@
                         <i class="flaticon-trophy"></i>
                     </div>
                     <div class="counter-content align-self-center">
-                        <span class="timer" data-to="245" data-speed="10000">32</span>
+                        <span class="timer" data-to="{{$team_count}}" data-speed="1000">{{$team_count}}</span>
                         <label>Skilled Experts</label>
                     </div>
                 </div>
@@ -604,7 +604,7 @@
                         <i class="flaticon-strong"></i>
                     </div>
                     <div class="counter-content">
-                        <span class="timer" data-to="491" data-speed="10000">491</span>
+                        <span class="timer" data-to="{{$stats['finished']}}" data-speed="10000">{{$stats['finished']}}</span>
                         <label>Finished Projects</label>
                     </div>
                 </div>
@@ -615,7 +615,7 @@
                         <i class="flaticon-icon-149196"></i>
                     </div>
                     <div class="counter-content">
-                        <span class="timer" data-to="1090" data-speed="10000">1090</span>
+                        <span class="timer" data-to="{{$stats['posts']}}" data-speed="10000">{{$stats['posts']}}</span>
                         <label>Media Posts</label>
                     </div>
                 </div>

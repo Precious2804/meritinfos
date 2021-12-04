@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\GeneralSetting;
 use App\Models\Portfolio;
 use App\Models\Service;
 use App\Models\Team;
@@ -59,6 +60,11 @@ class AdminController extends Controller
     {
         $all_team = ['all_team' => Team::all()];
         return view('admin.admin_team')->with($all_team);
+    }
+    public function admin_general()
+    {
+        $settings = ['settings' => GeneralSetting::where('name', "Admin")->first()];
+        return view('admin.admin_general')->with($settings);
     }
 
     public function logout()
@@ -194,5 +200,18 @@ class AdminController extends Controller
         } else {
             return $this->updateTeam($req, $data);
         }
+    }
+
+    public function edit_setting(Request $req)
+    {
+        $data = GeneralSetting::where('name', "Admin")->first();
+
+        $data->update([
+            'clients'=>$req->clients,
+            'posts'=>$req->posts,
+            'finished'=>$req->finished
+        ]);
+
+        return back()->with('updated', "General Settings was updated successfully");
     }
 }

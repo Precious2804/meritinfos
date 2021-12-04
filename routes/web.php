@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MainController;
+use App\Models\GeneralSetting;
+use App\Models\Team;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $stats = ['stats'=>GeneralSetting::where('name', "Admin")->first()];
+    $teams = Team::all();
+    $team_count = ['team_count'=>$teams->count()];
+    return view('welcome')->with($stats)->with($team_count);
 })->name('/');
 
 Route::get('/about', [MainController::class, 'about'])->name('about');
@@ -33,6 +38,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('admin.admin_services', [AdminController::class, 'admin_services'])->name('admin_services');
     Route::get('admin.admin_portfolio', [AdminController::class, 'admin_portfolio'])->name('admin_portfolio');
     Route::get('admin.admin_team', [AdminController::class, 'admin_team'])->name('admin_team');
+    Route::get('admin.admin_general', [AdminController::class, 'admin_general'])->name('admin_general');
     Route::get('logout', [AdminController::class, 'logout'])->name('logout');
     Route::get('admin.edit_port', [AdminController::class, 'edit_port'])->name('edit_port');
     Route::get('admin.edit_service', [AdminController::class, 'edit_service'])->name('edit_service');
@@ -43,6 +49,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/do_edit_port', [AdminController::class, 'do_edit_port'])->name('do_edit_port');
     Route::post('/do_edit_service', [AdminController::class, 'do_edit_service'])->name('do_edit_service');
     Route::post('/do_edit_team', [AdminController::class, 'do_edit_team'])->name('do_edit_team');
+    Route::post('/edit_setting', [AdminController::class, 'edit_setting'])->name('edit_setting');
     Route::get('/delete_service', [AdminController::class, 'delete_service'])->name('delete_service');
     Route::get('/delete_team', [AdminController::class, 'delete_team'])->name('delete_team');
 });
