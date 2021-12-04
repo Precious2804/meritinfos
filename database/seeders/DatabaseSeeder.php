@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::create([
             'id'=>rand(1000000, 9999999),
             'name'=>"Admin",
-            'email'=>"admin@gmail.com",
+            'email'=>"anipreciousebuka@gmail.com",
             'password'=>Hash::make('admin'),
             'isAdmin'=>"1"
         ]);

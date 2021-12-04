@@ -26,7 +26,7 @@
                 <div class="feature-info feature-info-style-02 h-100">
                     <div class="feature-info-icon">
                         <i class="flaticon-data"></i>
-                        <h5 class="mb-0 ms-4 feature-info-title">Website development</h5>
+                        <h5 class="mb-0 ms-4 feature-info-title">Website Development</h5>
                     </div>
                     <div class="feature-info-content">
                         <p class="mb-0"></p>

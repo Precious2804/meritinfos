@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
+use App\Models\User;
+use App\Notifications\ContactRequestNotification;
 use App\Traits\Generics;
 use Illuminate\Http\Request;
 
@@ -45,6 +47,8 @@ class MainController extends Controller
             'phone'=>$request->phone,
             'description'=>$request->description
         ]);
+        $user = User::where('name', "Admin")->first();
+        $user->notify(new ContactRequestNotification($request->name, $request->email, $request->phone, $request->description));
         return back()->with('sent', "Your message has been sent successfully, we'd contact you immediately");
     }
 }
