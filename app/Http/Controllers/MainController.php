@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ContactMessage;
 use App\Models\Portfolio;
 use App\Models\Service;
+use App\Models\Team;
 use App\Models\User;
 use App\Notifications\ContactRequestNotification;
 use App\Traits\Generics;
@@ -22,7 +23,8 @@ class MainController extends Controller
 
     public function team()
     {
-        return view('/team');
+        $all_team = ['all_team'=>Team::all()];
+        return view('/team')->with($all_team);
     }
 
     public function services()

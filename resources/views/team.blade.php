@@ -33,15 +33,16 @@
             </div>
         </div>
         <div class="row">
+            @foreach($all_team as $item)
             <div class="col-xl-2 col-md-3 col-sm-4 col-6">
                 <div class="team">
                     <div class="team-bg"></div>
                     <div class="team-img">
-                        <img class="img-fluid" src="images/team/01.jpg" alt="">
+                        <img class="img-fluid" src="{{$item->image}}" alt="">
                     </div>
                     <div class="team-info">
-                        <a href="#" class="team-name">Aaron Sharp</a>
-                        <p>Chief People Officer</p>
+                        <a href="#" class="team-name">{{$item->name}}</a>
+                        <p>{{$item->position}}</p>
                         <ul class="list-unstyled">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -50,176 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/02.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Homer Reyes</a>
-                        <p>Vice President</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/03.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Felica Queen</a>
-                        <p>Team Leader</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/04.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Sara Lisbon</a>
-                        <p>Production Manager</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/05.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Michael Bean</a>
-                        <p>Quality control</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/06.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Alice Williams </a>
-                        <p>Marketing manager</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/07.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Paul Flavius</a>
-                        <p>Human resources</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/08.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Anne Smith</a>
-                        <p>Sales and Marketing</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/09.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Mellissa Doe</a>
-                        <p>Marketing Expert</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/10.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Ben Aguilar</a>
-                        <p>Community</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
-                <div class="team">
-                    <div class="team-bg"></div>
-                    <div class="team-img">
-                        <img class="img-fluid" src="images/team/11.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <a href="#" class="team-name">Kim Hamilton</a>
-                        <p>Developer</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @endforeach
             <div class="col-xl-2 col-md-3 col-sm-4 col-6">
                 <div class="team apply-position">
                     <div class="team-icon">

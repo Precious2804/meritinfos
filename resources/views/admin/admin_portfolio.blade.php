@@ -46,30 +46,30 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 style="text-align: center;">OUR PORTFOLIO LISTS</h4>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        @foreach($all_portfolio as $item)
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="feature-info feature-info-style-02 h-100">
-                                <div class="feature-info-icon">
-                                    <i class="flaticon-data"></i>
-                                    <h5 class="mb-0 ms-4 feature-info-title"> {{$item->project}} </h5>
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 style="text-align: center;">OUR PORTFOLIO LISTS</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            @foreach($all_portfolio as $item)
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="feature-info feature-info-style-02 h-100">
+                                    <div class="feature-info-icon">
+                                        <i class="flaticon-data"></i>
+                                        <h5 class="mb-0 ms-4 feature-info-title"> {{$item->project}} </h5>
+                                    </div>
+                                    <div class="feature-info-content">
+                                        <p class="mb-0"> {{$item->description}} </p>
+                                        <a href="{{route('edit_port')}}?id={{$item->id}}" class="icon-btn"><i class="fas fa-edit"></i></a>
+                                    </div>
+                                    <div class="feature-info-bg-img" style="background-image: url(<?php echo $item->image; ?>);"></div>
                                 </div>
-                                <div class="feature-info-content">
-                                    <p class="mb-0"> {{$item->description}} </p>
-                                    <a href="{{route('edit_port')}}?id={{$item->id}}" class="icon-btn" target="_blank"><i class="fas fa-edit"></i></a>
-                                </div>
-                                <div class="feature-info-bg-img" style="background-image: url(<?php echo $item->image; ?>);"></div>
                             </div>
+                            @endforeach
                         </div>
-                        @endforeach
                     </div>
                 </div>
             </div>

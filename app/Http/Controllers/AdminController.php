@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
 use App\Models\Service;
+use App\Models\Team;
 use App\Models\User;
+use App\Traits\Generics;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
     //
+    use Generics;
 
     public function syslogin()
     {
@@ -54,7 +57,8 @@ class AdminController extends Controller
     }
     public function admin_team()
     {
-        return view('admin.admin_team');
+        $all_team = ['all_team' => Team::all()];
+        return view('admin.admin_team')->with($all_team);
     }
 
     public function logout()
@@ -72,6 +76,11 @@ class AdminController extends Controller
     {
         $service_details = ['service_details' => Service::where('id', $req->id)->first()];
         return view('admin.edit_service')->with($service_details);
+    }
+    public function edit_team(Request $req)
+    {
+        $team_details = ['team_details' => Team::where('id', $req->id)->first()];
+        return view('admin.edit_team')->with($team_details);
     }
 
     public function upload_portfolio(Request $req)
@@ -96,17 +105,6 @@ class AdminController extends Controller
 
             return back()->with('uploaded', "The new Portfolio details has been uploaded successfully");
         }
-    }
-
-    // a function to make the profile update dynamic
-    private function update($req, $data)
-    {
-        $data->project = $req->project;
-        $data->description = $req->description;
-        $data->url = $req->url;
-        $data->save();
-
-        return back()->with('updated', "Portfolio Update was Successfull!");
     }
 
     public function do_edit_port(Request $req)
@@ -151,5 +149,50 @@ class AdminController extends Controller
         $data = Service::where('id', $req->id)->first();
         $data->delete();
         return back()->with('deleted', "Service has been deleted Successfully");
+    }
+    public function delete_team(Request $req)
+    {
+        $data = Team::where('id', $req->id)->first();
+        $data->delete();
+        return back()->with('deleted', "Team member has been deleted Successfully");
+    }
+
+    public function upload_team(Request $req)
+    {
+        $req->validate([
+            'name' => 'required',
+            'position' => 'required',
+            'image' => 'required|mimes:png,jpg,jpeg,gif,svg|max:2048'
+        ]);
+
+        if ($req->file()) {
+            $name = time() . '_' . $req->image->getClientOriginalName();
+            $filePath = $req->file('image')->storeAs('teams', $name, 'public');
+
+            Team::create([
+                'name' => $req->name,
+                'position' => $req->position,
+                'image' => '/storage/' . $filePath
+            ]);
+
+            return back()->with('uploaded', "The new team member has been uploaded successfully");
+        }
+    }
+
+    public function do_edit_team(Request $req)
+    {
+        $data = Team::where('id', $req->id)->first();
+        $req->validate([
+            'image' => 'mimes:png,jpg,jpeg,gif,svg|max:2048'
+        ]);
+        if ($req->file()) {
+            $name = time() . '_' . $req->image->getClientOriginalName();
+            $filePath = $req->file('image')->storeAs('teams', $name, 'public');
+
+            $data->image = '/storage/' . $filePath;
+            return $this->updateTeam($req, $data);
+        } else {
+            return $this->updateTeam($req, $data);
+        }
     }
 }

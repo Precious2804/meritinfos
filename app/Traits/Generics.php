@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Traits;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -34,4 +35,23 @@ trait Generics
         return DB::table($table)->where($column, $random)->first() ? $this->createUniqueRand($table, $column) : $random;
     }
 
+    // a function to make the profile update dynamic
+    function update($req, $data)
+    {
+        $data->project = $req->project;
+        $data->description = $req->description;
+        $data->url = $req->url;
+        $data->save();
+
+        return back()->with('updated', "Portfolio Update was Successfull!");
+    }
+
+    function updateTeam($req, $data)
+    {
+        $data->name = $req->name;
+        $data->position = $req->position;
+        $data->save();
+
+        return back()->with('updated', "Team memmber Update was Successfull!");
+    }
 }
