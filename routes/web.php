@@ -29,7 +29,9 @@ Route::get('/team', [MainController::class, 'team'])->name('team');
 Route::get('/services', [MainController::class, 'services'])->name('services');
 Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
+Route::get('/lets-deal', [MainController::class, 'lets_deal'])->name('lets-deal');
 Route::post('/do_contact', [MainController::class, 'do_contact'])->name('do_contact');
+Route::post('/process_deal', [MainController::class, 'process_deal'])->name('process_deal');
 Route::get('/syslogin', [AdminController::class, 'syslogin'])->name('syslogin');
 Route::post('/do_login', [AdminController::class, 'do_login'])->name('do_login');
 

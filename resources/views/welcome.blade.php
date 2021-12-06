@@ -12,7 +12,7 @@
                         <div class="col-lg-9 col-md-10 text-center position-relative">
                             <h1 data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.25s">A professional Software providing company for your ideas</h1>
                             <h6 data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.5s">An award-Winning software service provider & creative digital agency.</h6>
-                            <a class="btn btn-dark btn-round text-white" data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.75s" href="#">Get Started Now<i class="fas fa-arrow-right ps-3"></i></a>
+                            <a class="btn btn-dark btn-round text-white" data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.75s" href="{{route('lets-deal')}}">Get Started Now<i class="fas fa-arrow-right ps-3"></i></a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
         <div class="row">
             <div class="col-12 d-md-flex justify-content-center align-items-center">
                 <p class="mb-3 mb-md-0 mx-0 mx-md-3">Contact us to discuss the goals for your brand</p>
-                <a href="#" class="btn btn-primary-round btn-round mx-0 mx-md-3">Get A Quote<i class="fas fa-arrow-right ps-3"></i></a>
+                <a href="{{route('lets-deal')}}" class="btn btn-primary-round btn-round mx-0 mx-md-3">Get A Quote<i class="fas fa-arrow-right ps-3"></i></a>
             </div>
         </div>
     </div>
@@ -552,7 +552,7 @@
                                 <a href="{{route('services')}}" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
-                        <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
+                        <!-- <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
                             <div class="feature-info-icon">
                                 <i class="flaticon-group"></i>
                             </div>
@@ -561,7 +561,7 @@
                                 <p class="mb-0"></p>
                                 <a href="{{route('services')}}" class="icon-btn"><i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -625,4 +625,6 @@
 </section>
 <!--=================================
     Counter -->
+    <br>
+    <br>
 @stop

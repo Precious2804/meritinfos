@@ -10,17 +10,11 @@
             <div class="col-lg-8">
                 <div class="section-title text-center">
                     <h1>Contact us</h1>
-                    <p>Drop us a line! We’ll set up a time to chat over the phone or in-person to know more about your business needs. All primary conferences are free of charge.</p>
+                    <p>Contact our 24/7 Support line for further discovery of our organization. And as well how we could be of help to you. Thank you</p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-lg-around position-relative pt-5">
-            <div class="col-lg-4 col-md-5 mb-4">
-                <div class="is-sticky">
-                    <h4 class="mb-4">Let’s talk about what you want to accomplish and how we can make it happen.</h4>
-                    <h5 class="text-light">This is the beginning of creating the life that you want to live.</h5>
-                </div>
-            </div>
             <div class="col-lg-7 col-md-7 pe-lg-5">
                 <div class="p-4 p-md-5 bg-white shadow">
                     <h3>Need assistance? please fill the form</h3>
@@ -41,15 +35,7 @@
                             <input type="text" name="phone" class="form-control" id="exampleInputEnquiry" placeholder="Phone">
                         </div>
                         <div class="mb-4">
-                            <textarea class="form-control" name="description" id="exampleInputEnquiry-Description" placeholder="Description of your need" rows="5"></textarea>
-                        </div>
-                        <div class="mb-4">
-                            <div class="form-check ms-1">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    I agree to talk about my project with {{env('APP_NAME')}}
-                                </label>
-                            </div>
+                            <textarea class="form-control" name="description" id="exampleInputEnquiry-Description" placeholder="Message description" rows="5"></textarea>
                         </div>
                         <div class="mb-0">
                             <button type="submit" class="btn btn-primary">Send Message<i class="fas fa-arrow-right ps-3"></i></button>

@@ -7,13 +7,13 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class ContactRequestNotification extends Notification
+class DealRequestNotification extends Notification
 {
     use Queueable;
-
     public $name;
     public $email;
     public $phone;
+    public $organization;
     public $description;
 
     /**
@@ -21,12 +21,13 @@ class ContactRequestNotification extends Notification
      *
      * @return void
      */
-    public function __construct($name, $email, $phone, $description)
+    public function __construct($name, $email, $phone, $organization, $description)
     {
         //
         $this->name = $name;
         $this->email = $email;
         $this->phone = $phone;
+        $this->organization = $organization;
         $this->description = $description;
     }
 
@@ -52,11 +53,12 @@ class ContactRequestNotification extends Notification
         $url = route('dashboard');
         return (new MailMessage)
                     ->greeting('Hello there!')
-                    ->line('This is a message from your '. env('APP_NAME'). ' website')
-                    ->line('A new message was sent from '.$this->name. ', with email address '.$this->email. ', and phone number '. $this->phone)
-                    ->line('Here is the details of the message: ' .$this->description)
+                    ->line('This is a deal request message for '.env('APP_NAME'))
+                    ->line('The message was sent from '.$this->name. ', with email address '.$this->email. ', and phone number '. $this->phone)
+                    ->line('Below is the details of the message: ')
+                    ->line($this->description)
                     ->action('Go to Dashboard', $url)
-                    ->line('Goodluck!');
+                    ->line('Goodluck with the Business!');
     }
 
     /**

@@ -52,7 +52,7 @@
                 </div>
             </div>
             @endforeach
-            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+            <!-- <div class="col-xl-2 col-md-3 col-sm-4 col-6">
                 <div class="team apply-position">
                     <div class="team-icon">
                         <i class="far fa-user-circle"></i>
@@ -61,7 +61,7 @@
                         <a href="#" class="btn btn-link">Apply for Possition<i class="fas fa-arrow-right text-dark ps-1"></i> </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

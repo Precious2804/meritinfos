@@ -49,8 +49,7 @@
                             </div>
                             <div class="d-inline-block py-1">
                                 <ul class="list-unstyled">
-                                    <li><a href="careers.html">Careers</a></li>
-                                    <li><a href="blog.html">News & Media</a></li>
+                                    <li><a href="{{route('lets-deal')}}"><button type="button" class="btn btn-primary">Let's Deal!</button></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -121,7 +120,7 @@
             <div class="bg-dark text-center rounded py-5 px-3">
                 <h2 class="text-white">Tell us about your idea, and we’ll make it happen.</h2>
                 <h6 class="text-white">Have a brand problem that needs to be solved? We’d love to hear about it!</h6>
-                <a href="#" class="btn btn-primary-round btn-round mx-0 mx-md-3 text-white">Let’s Get Started<i class="fas fa-arrow-right ps-3"></i></a>
+                <a href="{{route('lets-deal')}}" class="btn btn-primary-round btn-round mx-0 mx-md-3 text-white">Let's make a deal<i class="fas fa-arrow-right ps-3"></i></a>
             </div>
         </div>
     </section>
